@@ -1,7 +1,7 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-docker rm nk_nginx > /dev/null 2>&1
-docker run -d --name nk_nginx --net=host --restart always \
+docker rm nginx > /dev/null 2>&1
+docker run -d --name nginx --net=host --restart unless-stopped \
 	-v /:/hostfs:ro \
 	-v $DIR/logs:/var/log/nginx \
 	-v $DIR/conf.d:/etc/nginx/conf.d:ro \

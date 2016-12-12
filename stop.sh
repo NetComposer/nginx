@@ -1,2 +1,2 @@
 #!/bin/bash
-docker stop nk_nginx
+docker stop nginx
