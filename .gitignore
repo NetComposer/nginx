@@ -1,0 +1,3 @@
+logs
+conf.d/*.conf
+conf.d/*.inc
