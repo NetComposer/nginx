@@ -4,5 +4,5 @@
 # -t
 # -V
 
-docker exec -ti nk_nginx nginx $*
+docker exec -ti nginx nginx -t
 
