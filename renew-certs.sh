@@ -1,4 +1,4 @@
 #!/bin/sh
 
-letsencrypt renew
-docker exec -ti nk_nginx nginx -s reload
+letsencrypt renew --webroot -w www/letsencrypt
+#docker exec -ti nk_nginx nginx -s reload
